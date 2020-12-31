@@ -22,6 +22,7 @@
 		31D05757259E02EF00257884 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		31D05759259E02EF00257884 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31D05760259E031F00257884 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		31D05765259E03B100257884 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +40,7 @@
 			isa = PBXGroup;
 			children = (
 				31D0574F259E02EE00257884 /* Mimosa */,
+				31D05765259E03B100257884 /* README.md */,
 				31D05760259E031F00257884 /* LICENSE */,
 				31D0574E259E02EE00257884 /* Products */,
 			);
