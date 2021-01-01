@@ -36,6 +36,26 @@ struct LibraryTab: View {
                     }
                 }
                 
+                // Recently added formulas
+                VStack(alignment: .leading) {
+                    
+                    Text("Recent")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .padding(.top)
+                    
+                    // Placeholder content
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .frame(height: 150)
+                        .foregroundColor(.blue)
+                        .overlay((
+                            Text("Formula placeholder")
+                                .foregroundColor(.white)
+                                .padding()
+                        ), alignment: .topLeading)
+                    
+                }
+                
             }
             .navigationTitle("Library")
             
