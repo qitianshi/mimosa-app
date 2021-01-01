@@ -11,29 +11,34 @@
 
 import SwiftUI
 
-/// Model for information that describes each list row.
-fileprivate struct LT_ListItem: Hashable {
-    let imageName: String
-    let text: String
-}
-
 struct LibraryTab: View {
     
     // Content of each list row is stored in an array so they can be generated programmatically.
-    private let LT_ListItems = [LT_ListItem(imageName: "function", text: "Formulas"),
-                                LT_ListItem(imageName: "book.closed", text: "Fields"),
-                                LT_ListItem(imageName: "sum", text: "Terms")]
+    private let LT_listItems = [LT_ListItem(imageName: "function",
+                                            text: "Formulas",
+                                            link: AnyView(LT_Formulas())),
+                                LT_ListItem(imageName: "book.closed",
+                                            text: "Fields",
+                                            link: AnyView(LT_Fields())),
+                                LT_ListItem(imageName: "sum",
+                                            text: "Terms",
+                                            link: AnyView(LT_Terms()))]
     
     var body: some View {
         NavigationView {
             
             List {
-                ForEach(LT_ListItems, id: \.self) { item in
-                    LT_ListRow(imageName: item.imageName, text: item.text)
+                
+                // Organizes user's entire library
+                ForEach(LT_listItems) { item in
+                    NavigationLink(destination: item.link) {
+                        LT_ListRow(listItem: item)
+                    }
                 }
+                
             }
-            
             .navigationTitle("Library")
+            
         }
     }
     

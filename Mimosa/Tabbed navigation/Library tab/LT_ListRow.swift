@@ -11,22 +11,29 @@
 
 import SwiftUI
 
-struct LT_ListRow: View {
-    
+/// Model for information that describes each list row.
+struct LT_ListItem: Identifiable {
+    var id = UUID()
     let imageName: String
     let text: String
+    let link: AnyView
+}
+
+struct LT_ListRow: View {
+    
+    let listItem: LT_ListItem
     
     var body: some View {
         
         HStack {
             
-            Image(systemName: self.imageName)
+            Image(systemName: self.listItem.imageName)
                 .font(.title2)
                 .foregroundColor(.blue)
                 .frame(width: 20)
                 .padding(.trailing)
             
-            Text(self.text)
+            Text(self.listItem.text)
                 .font(.title2)
             
         }
@@ -40,7 +47,7 @@ struct LT_ListRow_Previews: PreviewProvider {
     static var previews: some View {
         
         // Placeholder values for imageName and text.
-        LT_ListRow(imageName: "function", text: "Formulas")
+        LT_ListRow(listItem: LT_ListItem(imageName: "function", text: "Formulas", link: AnyView(LT_Formulas())))
             .previewLayout(.sizeThatFits)
         
     }
