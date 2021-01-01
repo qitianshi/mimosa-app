@@ -16,6 +16,7 @@ struct LT_Formulas: View {
         
         // Placeholder content
         Text("LT_Formulas.swift")
+            .font(.system(.body, design: .monospaced))
             .navigationTitle("Formulas")
         
     }

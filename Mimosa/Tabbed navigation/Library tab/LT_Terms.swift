@@ -16,6 +16,7 @@ struct LT_Terms: View {
         
         // Placeholder content
         Text("LT_Terms.swift")
+            .font(.system(.body, design: .monospaced))
             .navigationTitle("Terms")
         
     }
