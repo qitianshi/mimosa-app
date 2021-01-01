@@ -50,6 +50,7 @@ struct LibraryTab: View {
                         .foregroundColor(.blue)
                         .overlay((
                             Text("Formula placeholder")
+                                .font(.system(.body, design: .monospaced))
                                 .foregroundColor(.white)
                                 .padding()
                         ), alignment: .topLeading)

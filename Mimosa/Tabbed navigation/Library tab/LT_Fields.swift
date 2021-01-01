@@ -16,6 +16,7 @@ struct LT_Fields: View {
         
         // Placeholder content
         Text("LT_Fields.swift")
+            .font(.system(.body, design: .monospaced))
             .navigationTitle("Fields")
         
     }
