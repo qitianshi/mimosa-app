@@ -16,6 +16,7 @@ struct SearchTab: View {
         
         // Placeholder content
         Text("SearchTab.swift")
+            .font(.system(.body, design: .monospaced))
         
     }
 }
