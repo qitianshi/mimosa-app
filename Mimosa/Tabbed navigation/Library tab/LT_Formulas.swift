@@ -13,13 +13,11 @@ import SwiftUI
 
 struct LT_Formulas: View {
     var body: some View {
-        NavigationView {
-            
-            // Placeholder content
-            Text("LT_Formulas.swift")
-                .navigationTitle("Formulas")
-            
-        }
+        
+        // Placeholder content
+        Text("LT_Formulas.swift")
+            .navigationTitle("Formulas")
+        
     }
 }
 

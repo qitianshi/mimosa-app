@@ -13,13 +13,11 @@ import SwiftUI
 
 struct LT_Fields: View {
     var body: some View {
-        NavigationView {
-            
-            // Placeholder content
-            Text("LT_Fields.swift")
-                .navigationTitle("Fields")
-            
-        }
+        
+        // Placeholder content
+        Text("LT_Fields.swift")
+            .navigationTitle("Fields")
+        
     }
 }
 

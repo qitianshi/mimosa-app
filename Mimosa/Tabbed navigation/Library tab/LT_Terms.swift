@@ -13,13 +13,11 @@ import SwiftUI
 
 struct LT_Terms: View {
     var body: some View {
-        NavigationView {
         
-            // Placeholder content
-            Text("LT_Terms.swift")
-                .navigationTitle("Terms")
-            
-        }
+        // Placeholder content
+        Text("LT_Terms.swift")
+            .navigationTitle("Terms")
+        
     }
 }
 
