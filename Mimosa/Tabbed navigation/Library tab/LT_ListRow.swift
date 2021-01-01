@@ -21,15 +21,16 @@ struct LT_ListRow: View {
         HStack {
             
             Image(systemName: self.imageName)
+                .font(.title2)
                 .foregroundColor(.blue)
+                .frame(width: 20)
                 .padding(.trailing)
             
             Text(self.text)
-            
-            Spacer()
+                .font(.title2)
             
         }
-        .padding()
+        .padding(10)
         
     }
     
