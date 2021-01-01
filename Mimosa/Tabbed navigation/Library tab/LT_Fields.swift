@@ -23,6 +23,11 @@ struct LT_Fields: View {
 
 struct LT_Fields_Previews: PreviewProvider {
     static var previews: some View {
-        LT_Fields()
+        
+        // Preview is wrapped in a navigation view to make the navigation title visible.
+        NavigationView {
+            LT_Fields()
+        }
+        
     }
 }

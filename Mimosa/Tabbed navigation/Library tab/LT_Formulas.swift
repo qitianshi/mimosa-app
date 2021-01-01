@@ -23,6 +23,11 @@ struct LT_Formulas: View {
 
 struct LT_Formulas_Previews: PreviewProvider {
     static var previews: some View {
-        LT_Formulas()
+        
+        // Preview is wrapped in a navigation view to make the navigation title visible.
+        NavigationView {
+            LT_Formulas()
+        }
+        
     }
 }

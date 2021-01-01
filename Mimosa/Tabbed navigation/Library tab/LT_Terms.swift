@@ -23,6 +23,11 @@ struct LT_Terms: View {
 
 struct LT_Terms_Previews: PreviewProvider {
     static var previews: some View {
-        LT_Terms()
+        
+        // Preview is wrapped in a navigation view to make the navigation title visible.
+        NavigationView {
+            LT_Terms()
+        }
+        
     }
 }
