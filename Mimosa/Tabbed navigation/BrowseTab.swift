@@ -16,6 +16,7 @@ struct BrowseTab: View {
         
         // Placeholder content
         Text("BrowseTab.swift")
+            .font(.system(.body, design: .monospaced))
         
     }
 }
