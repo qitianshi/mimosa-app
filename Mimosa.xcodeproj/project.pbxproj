@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		314C8BD6259EFFDA000BF89C /* LT_ListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314C8BD5259EFFDA000BF89C /* LT_ListRow.swift */; };
 		31D05751259E02EE00257884 /* MimosaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D05750259E02EE00257884 /* MimosaApp.swift */; };
 		31D05753259E02EE00257884 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D05752259E02EE00257884 /* ContentView.swift */; };
 		31D05755259E02EF00257884 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31D05754259E02EF00257884 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		314C8BD5259EFFDA000BF89C /* LT_ListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LT_ListRow.swift; sourceTree = "<group>"; };
 		31D0574D259E02EE00257884 /* Mimosa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mimosa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31D05750259E02EE00257884 /* MimosaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimosaApp.swift; sourceTree = "<group>"; };
 		31D05752259E02EE00257884 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +44,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		314C8BCE259EFEE1000BF89C /* Library tab */ = {
+			isa = PBXGroup;
+			children = (
+				31D0576E259E061600257884 /* LibraryTab.swift */,
+				314C8BD5259EFFDA000BF89C /* LT_ListRow.swift */,
+			);
+			path = "Library tab";
+			sourceTree = "<group>";
+		};
 		31D05744259E02EE00257884 = {
 			isa = PBXGroup;
 			children = (
@@ -85,7 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				31D0576B259E060700257884 /* BrowseTab.swift */,
-				31D0576E259E061600257884 /* LibraryTab.swift */,
+				314C8BCE259EFEE1000BF89C /* Library tab */,
 				31D05771259E061E00257884 /* SearchTab.swift */,
 			);
 			path = "Tabbed navigation";
@@ -165,6 +176,7 @@
 				31D05751259E02EE00257884 /* MimosaApp.swift in Sources */,
 				31D0576C259E060700257884 /* BrowseTab.swift in Sources */,
 				31D05772259E061E00257884 /* SearchTab.swift in Sources */,
+				314C8BD6259EFFDA000BF89C /* LT_ListRow.swift in Sources */,
 				31D0576F259E061600257884 /* LibraryTab.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
