@@ -22,7 +22,6 @@ struct IP_Formula: View {
                 .foregroundColor(.white)
             
             Rectangle()
-                .frame(height: 100)
                 .foregroundColor(.secondary)
                 .overlay(
                     Text("Placeholder formula")
@@ -41,6 +40,7 @@ struct IP_Formula: View {
 struct IP_Formula_Previews: PreviewProvider {
     static var previews: some View {
         IP_Formula()
+            .frame(height: 175)
             .padding()
             .previewLayout(.sizeThatFits)
     }

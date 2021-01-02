@@ -44,10 +44,11 @@ struct LibraryTab: View {
                         .fontWeight(.bold)
                         .padding(.top)
                     
-                    // TODO: Placeholder content
+                    // Placeholder content
                     LazyVStack {
                         ForEach((0...3), id: \.self) { _ in
                             IP_Formula()
+                                .frame(height: 175)
                         }
                     }
                     

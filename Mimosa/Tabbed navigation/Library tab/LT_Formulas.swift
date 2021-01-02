@@ -16,11 +16,15 @@ struct LT_Formulas: View {
         
         // Placeholder content
         ScrollView {
-            LazyVStack(alignment: .leading) {
-                
-                IP_Formula()
-                
+            
+            // Placeholder content
+            LazyVStack {
+                ForEach((0...3), id: \.self) { _ in
+                    IP_Formula()
+                        .frame(height: 175)
+                }
             }
+            
         }
         .padding()
         .navigationTitle("Formulas")
