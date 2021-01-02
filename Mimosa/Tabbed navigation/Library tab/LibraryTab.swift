@@ -18,8 +18,8 @@ struct LibraryTab: View {
                                             text: "Formulas",
                                             link: AnyView(LT_Formulas())),
                                 LT_ListItem(imageName: "book.closed",
-                                            text: "Fields",
-                                            link: AnyView(LT_Fields())),
+                                            text: "Categories",
+                                            link: AnyView(LT_Categories())),
                                 LT_ListItem(imageName: "sum",
                                             text: "Terms",
                                             link: AnyView(LT_Terms()))]

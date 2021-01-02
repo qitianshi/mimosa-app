@@ -6,7 +6,7 @@
 
 // GNU General Public License v3.0
 
-// The Search tab lets users search for formulas by their terms, name, field, and more.
+// The Search tab lets users search for formulas by their terms, name, category, and more.
 
 
 import SwiftUI
