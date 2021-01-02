@@ -6,7 +6,7 @@
 
 // GNU General Public License v3.0
 
-// A grid of formulas.
+// A preview of formulas.
 
 
 import SwiftUI
