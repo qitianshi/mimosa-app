@@ -15,9 +15,15 @@ struct LT_Formulas: View {
     var body: some View {
         
         // Placeholder content
-        Text("LT_Formulas.swift")
-            .font(.system(.body, design: .monospaced))
-            .navigationTitle("Formulas")
+        ScrollView {
+            LazyVStack(alignment: .leading) {
+                
+                IP_Formula()
+                
+            }
+        }
+        .padding()
+        .navigationTitle("Formulas")
         
     }
 }
