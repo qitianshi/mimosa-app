@@ -1,4 +1,4 @@
-// IP_Term.swift
+// RV_ContentPreview.swift
 // Mimosa: Working title; non-working project.
 
 // Created on 2/1/21
@@ -6,25 +6,28 @@
 
 // GNU General Public License v3.0
 
-// A grid of terms.
+// A preview of formulas.
 
 
 import SwiftUI
 
-struct IP_Term: View {
+struct RV_ContentPreview: View {
+    
+    let title: String
+    
     var body: some View {
         
         // Placeholder content
         VStack(alignment: .leading) {
             
-            Text("Term name")
+            Text(self.title)
                 .font(.headline)
                 .foregroundColor(.white)
             
             Rectangle()
                 .foregroundColor(.secondary)
                 .overlay(
-                    Text("Placeholder term")
+                    Text("Placeholder image")
                         .foregroundColor(.white)
                         .font(.system(.body, design: .monospaced))
                 )
@@ -35,12 +38,13 @@ struct IP_Term: View {
         .clipShape( RoundedRectangle(cornerRadius: 10.0, style: .continuous) )
         
     }
+    
 }
 
-struct IP_Term_Previews: PreviewProvider {
+struct RV_ContentPreview_Previews: PreviewProvider {
     static var previews: some View {
-        IP_Term()
-            .frame(width: 125, height: 125)
+        RV_ContentPreview(title: "Placeholder")
+            .frame(height: 175)
             .padding()
             .previewLayout(.sizeThatFits)
     }
