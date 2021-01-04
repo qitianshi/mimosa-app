@@ -11,9 +11,12 @@
 
 import SwiftUI
 
+enum PreviewType { case formula, category, term }
+
 struct RV_ContentPreview: View {
     
     let title: String
+    let type: PreviewType       // TODO: Will be used to modify this view to fit its use case.
     
     var body: some View {
         
@@ -43,9 +46,12 @@ struct RV_ContentPreview: View {
 
 struct RV_ContentPreview_Previews: PreviewProvider {
     static var previews: some View {
-        RV_ContentPreview(title: "Placeholder name")
+        
+        // Placeholder content
+        RV_ContentPreview(title: "Placeholder name", type: .formula)
             .frame(height: 175)
             .padding()
             .previewLayout(.sizeThatFits)
+        
     }
 }
