@@ -17,13 +17,13 @@ struct RV_ContentPreview: View {
     
     var body: some View {
         
-        // Placeholder content
         VStack(alignment: .leading) {
             
             Text(self.title)
                 .font(.headline)
                 .foregroundColor(.white)
             
+            // Placeholder content
             Rectangle()
                 .foregroundColor(.secondary)
                 .overlay(
@@ -43,7 +43,7 @@ struct RV_ContentPreview: View {
 
 struct RV_ContentPreview_Previews: PreviewProvider {
     static var previews: some View {
-        RV_ContentPreview(title: "Placeholder")
+        RV_ContentPreview(title: "Placeholder name")
             .frame(height: 175)
             .padding()
             .previewLayout(.sizeThatFits)
