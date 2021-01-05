@@ -16,7 +16,7 @@ struct LT_Formulas: View {
         
         ScrollView {
             
-            LazyVStack {
+            LazyVGrid(columns: [ GridItem(.adaptive(minimum: 300)) ]) {
                 
                 // Placeholder content
                 ForEach((0...3), id: \.self) { _ in
