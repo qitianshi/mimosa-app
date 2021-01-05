@@ -14,10 +14,21 @@ import SwiftUI
 struct LT_Categories: View {
     var body: some View {
         
-        // Placeholder content
-        Text("LT_Categories.swift")
-            .font(.system(.body, design: .monospaced))
-            .navigationTitle("Categories")
+        ScrollView {
+            
+            LazyVGrid(columns: [ GridItem(.adaptive(minimum: 150)) ]) {
+                
+                // Placeholder content
+                ForEach((0...7), id: \.self) { _ in
+                    RV_ContentPreview(title: "Category name", type: .category)
+                        .frame(height: 175)
+                }
+                
+            }
+            .padding()
+            
+        }
+        .navigationTitle("Categories")
         
     }
 }

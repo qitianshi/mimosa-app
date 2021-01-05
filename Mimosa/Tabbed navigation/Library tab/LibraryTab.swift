@@ -45,15 +45,12 @@ struct LibraryTab: View {
                         .padding(.top)
                     
                     // Placeholder content
-                    RoundedRectangle(cornerRadius: 10, style: .continuous)
-                        .frame(height: 150)
-                        .foregroundColor(.blue)
-                        .overlay((
-                            Text("Formula placeholder")
-                                .font(.system(.body, design: .monospaced))
-                                .foregroundColor(.white)
-                                .padding()
-                        ), alignment: .topLeading)
+                    LazyVStack {
+                        ForEach((0...3), id: \.self) { _ in
+                            RV_ContentPreview(title: "Formula name", type: .formula)
+                                .frame(height: 175)
+                        }
+                    }
                     
                 }
                 
