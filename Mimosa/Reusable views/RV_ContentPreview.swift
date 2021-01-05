@@ -26,7 +26,7 @@ struct RV_ContentPreview: View {
                 .font(.headline)
                 .foregroundColor(.white)
             
-            // Placeholder content
+            // TODO: Placeholder content
             Rectangle()
                 .foregroundColor(.secondary)
                 .overlay(
@@ -47,7 +47,7 @@ struct RV_ContentPreview: View {
 struct RV_ContentPreview_Previews: PreviewProvider {
     static var previews: some View {
         
-        // Placeholder content
+        // Placeholder values for title and type.
         RV_ContentPreview(title: "Placeholder name", type: .formula)
             .frame(height: 175)
             .padding()

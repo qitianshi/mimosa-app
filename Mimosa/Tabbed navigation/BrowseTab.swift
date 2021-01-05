@@ -14,7 +14,7 @@ import SwiftUI
 struct BrowseTab: View {
     var body: some View {
         
-        // Placeholder content
+        // TODO: Placeholder content
         Text("BrowseTab.swift")
             .font(.system(.body, design: .monospaced))
         
