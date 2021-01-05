@@ -18,9 +18,9 @@ struct LT_Terms: View {
             
             LazyVGrid(columns: [ GridItem(.adaptive(minimum: 150)) ]) {
                 
-                // Placeholder content
+                // TODO: Placeholder content
                 ForEach((0...7), id: \.self) { _ in
-                    RV_ContentPreview(title: "Term name", type: .term)
+                    GV_ContentPreview(title: "Term name", type: .term)
                         .frame(height: 175)
                 }
                 

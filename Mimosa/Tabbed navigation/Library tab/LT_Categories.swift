@@ -18,9 +18,9 @@ struct LT_Categories: View {
             
             LazyVGrid(columns: [ GridItem(.adaptive(minimum: 150)) ]) {
                 
-                // Placeholder content
+                // TODO: Placeholder content
                 ForEach((0...7), id: \.self) { _ in
-                    RV_ContentPreview(title: "Category name", type: .category)
+                    GV_ContentPreview(title: "Category name", type: .category)
                         .frame(height: 175)
                 }
                 
