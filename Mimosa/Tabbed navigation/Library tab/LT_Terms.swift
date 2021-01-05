@@ -20,7 +20,7 @@ struct LT_Terms: View {
                 
                 // TODO: Placeholder content
                 ForEach((0...7), id: \.self) { _ in
-                    RV_ContentPreview(title: "Term name", type: .term)
+                    GV_ContentPreview(title: "Term name", type: .term)
                         .frame(height: 175)
                 }
                 

@@ -11,7 +11,7 @@
 		31607833259F506B008DAB48 /* LT_Formulas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31607832259F506B008DAB48 /* LT_Formulas.swift */; };
 		31607836259F542A008DAB48 /* LT_Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31607835259F542A008DAB48 /* LT_Categories.swift */; };
 		31607839259F546B008DAB48 /* LT_Terms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31607838259F546B008DAB48 /* LT_Terms.swift */; };
-		3195571125A06F3B0087AECB /* RV_ContentPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3195571025A06F3B0087AECB /* RV_ContentPreview.swift */; };
+		3195571125A06F3B0087AECB /* GV_ContentPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3195571025A06F3B0087AECB /* GV_ContentPreview.swift */; };
 		31D05751259E02EE00257884 /* MimosaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D05750259E02EE00257884 /* MimosaApp.swift */; };
 		31D05753259E02EE00257884 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D05752259E02EE00257884 /* ContentView.swift */; };
 		31D05755259E02EF00257884 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31D05754259E02EF00257884 /* Assets.xcassets */; };
@@ -27,7 +27,7 @@
 		31607832259F506B008DAB48 /* LT_Formulas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LT_Formulas.swift; sourceTree = "<group>"; };
 		31607835259F542A008DAB48 /* LT_Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LT_Categories.swift; sourceTree = "<group>"; };
 		31607838259F546B008DAB48 /* LT_Terms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LT_Terms.swift; sourceTree = "<group>"; };
-		3195571025A06F3B0087AECB /* RV_ContentPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RV_ContentPreview.swift; sourceTree = "<group>"; };
+		3195571025A06F3B0087AECB /* GV_ContentPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GV_ContentPreview.swift; sourceTree = "<group>"; };
 		31D0574D259E02EE00257884 /* Mimosa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mimosa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31D05750259E02EE00257884 /* MimosaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimosaApp.swift; sourceTree = "<group>"; };
 		31D05752259E02EE00257884 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,12 +64,12 @@
 			path = "Library tab";
 			sourceTree = "<group>";
 		};
-		3195570F25A06E3F0087AECB /* Reusable views */ = {
+		3195570F25A06E3F0087AECB /* Generic views */ = {
 			isa = PBXGroup;
 			children = (
-				3195571025A06F3B0087AECB /* RV_ContentPreview.swift */,
+				3195571025A06F3B0087AECB /* GV_ContentPreview.swift */,
 			);
-			path = "Reusable views";
+			path = "Generic views";
 			sourceTree = "<group>";
 		};
 		31D05744259E02EE00257884 = {
@@ -96,7 +96,7 @@
 				31D05750259E02EE00257884 /* MimosaApp.swift */,
 				31D05752259E02EE00257884 /* ContentView.swift */,
 				31D0576A259E05ED00257884 /* Tabbed navigation */,
-				3195570F25A06E3F0087AECB /* Reusable views */,
+				3195570F25A06E3F0087AECB /* Generic views */,
 				31D05754259E02EF00257884 /* Assets.xcassets */,
 				31D05759259E02EF00257884 /* Info.plist */,
 				31D05756259E02EF00257884 /* Preview Content */,
@@ -201,7 +201,7 @@
 				31D05772259E061E00257884 /* SearchTab.swift in Sources */,
 				314C8BD6259EFFDA000BF89C /* LT_ListRow.swift in Sources */,
 				31D0576F259E061600257884 /* LibraryTab.swift in Sources */,
-				3195571125A06F3B0087AECB /* RV_ContentPreview.swift in Sources */,
+				3195571125A06F3B0087AECB /* GV_ContentPreview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

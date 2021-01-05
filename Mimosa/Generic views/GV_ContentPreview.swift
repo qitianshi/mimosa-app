@@ -1,4 +1,4 @@
-// RV_ContentPreview.swift
+// GV_ContentPreview.swift
 // Mimosa: Working title; non-working project.
 
 // Created on 2/1/21
@@ -13,7 +13,7 @@ import SwiftUI
 
 enum PreviewType { case formula, category, term }
 
-struct RV_ContentPreview: View {
+struct GV_ContentPreview: View {
     
     let title: String
     let type: PreviewType       // TODO: Will be used to modify this view to fit its use case.
@@ -44,11 +44,11 @@ struct RV_ContentPreview: View {
     
 }
 
-struct RV_ContentPreview_Previews: PreviewProvider {
+struct GV_ContentPreview_Previews: PreviewProvider {
     static var previews: some View {
         
         // Placeholder values for title and type.
-        RV_ContentPreview(title: "Placeholder name", type: .formula)
+        GV_ContentPreview(title: "Placeholder name", type: .formula)
             .frame(height: 175)
             .padding()
             .previewLayout(.sizeThatFits)
