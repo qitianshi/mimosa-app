@@ -28,11 +28,12 @@ struct GV_ContentPreview: View {
             
             // TODO: Placeholder content
             Rectangle()
-                .foregroundColor(.secondary)
+                .foregroundColor(.gray)
+                .opacity(0.75)
                 .overlay(
                     Text("Placeholder image")
+                        .applyPlaceholderTextStyle(withBorder: false)
                         .foregroundColor(.white)
-                        .font(.system(.body, design: .monospaced))
                 )
             
         }

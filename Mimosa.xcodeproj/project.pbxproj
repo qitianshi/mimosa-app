@@ -11,6 +11,7 @@
 		31607833259F506B008DAB48 /* LT_Formulas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31607832259F506B008DAB48 /* LT_Formulas.swift */; };
 		31607836259F542A008DAB48 /* LT_Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31607835259F542A008DAB48 /* LT_Categories.swift */; };
 		31607839259F546B008DAB48 /* LT_Terms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31607838259F546B008DAB48 /* LT_Terms.swift */; };
+		3177D47825A499B60029FF50 /* GV_PlaceholderTextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3177D47725A499B60029FF50 /* GV_PlaceholderTextStyle.swift */; };
 		3195571125A06F3B0087AECB /* GV_ContentPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3195571025A06F3B0087AECB /* GV_ContentPreview.swift */; };
 		31D05751259E02EE00257884 /* MimosaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D05750259E02EE00257884 /* MimosaApp.swift */; };
 		31D05753259E02EE00257884 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D05752259E02EE00257884 /* ContentView.swift */; };
@@ -27,6 +28,7 @@
 		31607832259F506B008DAB48 /* LT_Formulas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LT_Formulas.swift; sourceTree = "<group>"; };
 		31607835259F542A008DAB48 /* LT_Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LT_Categories.swift; sourceTree = "<group>"; };
 		31607838259F546B008DAB48 /* LT_Terms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LT_Terms.swift; sourceTree = "<group>"; };
+		3177D47725A499B60029FF50 /* GV_PlaceholderTextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GV_PlaceholderTextStyle.swift; sourceTree = "<group>"; };
 		3195571025A06F3B0087AECB /* GV_ContentPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GV_ContentPreview.swift; sourceTree = "<group>"; };
 		31D0574D259E02EE00257884 /* Mimosa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mimosa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31D05750259E02EE00257884 /* MimosaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimosaApp.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				3195571025A06F3B0087AECB /* GV_ContentPreview.swift */,
+				3177D47725A499B60029FF50 /* GV_PlaceholderTextStyle.swift */,
 			);
 			path = "Generic views";
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31607836259F542A008DAB48 /* LT_Categories.swift in Sources */,
+				3177D47825A499B60029FF50 /* GV_PlaceholderTextStyle.swift in Sources */,
 				31607833259F506B008DAB48 /* LT_Formulas.swift in Sources */,
 				31607839259F546B008DAB48 /* LT_Terms.swift in Sources */,
 				31D05753259E02EE00257884 /* ContentView.swift in Sources */,
