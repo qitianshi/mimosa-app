@@ -14,20 +14,20 @@ import SwiftUI
 struct LT_Terms: View {
     var body: some View {
         
-        // Placeholder content
         ScrollView {
             
-            // Placeholder content
             LazyVGrid(columns: [ GridItem(.adaptive(minimum: 150)) ]) {
+                
+                // Placeholder content
                 ForEach((0...7), id: \.self) { _ in
                     RV_ContentPreview(title: "Term name", type: .term)
                         .frame(height: 175)
                 }
+                
             }
-            
+            .padding()
             
         }
-        .padding()
         .navigationTitle("Terms")
         
     }

@@ -14,19 +14,20 @@ import SwiftUI
 struct LT_Formulas: View {
     var body: some View {
         
-        // Placeholder content
         ScrollView {
             
-            // Placeholder content
             LazyVStack {
+                
+                // Placeholder content
                 ForEach((0...3), id: \.self) { _ in
                     RV_ContentPreview(title: "Formula name", type: .formula)
                         .frame(height: 175)
                 }
+                
             }
+            .padding()
             
         }
-        .padding()
         .navigationTitle("Formulas")
         
     }
