@@ -6,7 +6,7 @@
 
 // GNU General Public License v3.0
 
-// A preview of formulas.
+// A preview of formulas, categories, or terms.
 
 
 import SwiftUI
