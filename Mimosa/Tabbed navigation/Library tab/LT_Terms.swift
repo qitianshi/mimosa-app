@@ -15,9 +15,20 @@ struct LT_Terms: View {
     var body: some View {
         
         // Placeholder content
-        Text("LT_Terms.swift")
-            .font(.system(.body, design: .monospaced))
-            .navigationTitle("Terms")
+        ScrollView {
+            
+            // Placeholder content
+            LazyVGrid(columns: [ GridItem(.adaptive(minimum: 150)) ]) {
+                ForEach((0...7), id: \.self) { _ in
+                    RV_ContentPreview(title: "Term name", type: .term)
+                        .frame(height: 175)
+                }
+            }
+            
+            
+        }
+        .padding()
+        .navigationTitle("Terms")
         
     }
 }
