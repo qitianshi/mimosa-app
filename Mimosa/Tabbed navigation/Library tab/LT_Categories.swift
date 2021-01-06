@@ -20,7 +20,7 @@ struct LT_Categories: View {
                 
                 // TODO: Placeholder content
                 ForEach((0...7), id: \.self) { _ in
-                    GV_ContentPreview(title: "Category name", type: .category)
+                    GV_ContentPreview(heading: "Category name", type: .category)
                         .frame(height: 175)
                 }
                 
