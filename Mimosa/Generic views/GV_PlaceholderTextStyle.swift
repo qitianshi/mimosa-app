@@ -38,6 +38,7 @@ fileprivate struct GV_PlaceholderTextStyle: ViewModifier {
         } else { return noBorder }
         
     }
+    
 }
 
 extension View {
