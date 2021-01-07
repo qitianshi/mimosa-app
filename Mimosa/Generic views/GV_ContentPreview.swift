@@ -12,13 +12,13 @@
 import SwiftUI
 
 /// Used by `GV_ContentPreview` to determine the type of content to preview.
-enum PreviewType { case formula, category, term }
+enum PreviewContentType { case formula, category, term }
 
 /// A view that offers a condensed preview with a name and an image.
 struct GV_ContentPreview: View {
     
     let heading: String
-    let type: PreviewType       // TODO: Will be used to modify this view to fit its use case.
+    let contentType: PreviewContentType       // TODO: Will be used to modify this view to fit its use case.
     
     var body: some View {
         
@@ -51,7 +51,7 @@ struct GV_ContentPreview_Previews: PreviewProvider {
     static var previews: some View {
         
         // Placeholder values for title and type.
-        GV_ContentPreview(heading: "Placeholder name", type: .formula)
+        GV_ContentPreview(heading: "Placeholder name", contentType: .formula)
             .frame(height: 175)
             .padding()
             .previewLayout(.sizeThatFits)

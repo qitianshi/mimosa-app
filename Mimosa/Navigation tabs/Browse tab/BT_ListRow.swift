@@ -15,13 +15,13 @@ import SwiftUI
 struct BT_ListItem: Identifiable {
     var id = UUID()
     var heading: String
-    var previewType: PreviewType
+    var previewType: PreviewContentType
 }
 
 struct BT_ListRow: View {
     
     let heading: String
-    let previewType: PreviewType
+    let previewType: PreviewContentType
     
     var body: some View {
         
@@ -38,7 +38,7 @@ struct BT_ListRow: View {
                     ForEach((0...3), id: \.self) { i in
                         
                         // TODO: Placeholder content
-                        GV_ContentPreview(heading: "Preview \(i + 1)", type: self.previewType)
+                        GV_ContentPreview(heading: "Preview \(i + 1)", contentType: self.previewType)
                             .frame(width: 200, height: 120)
                         
                     }
