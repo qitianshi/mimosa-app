@@ -10,7 +10,7 @@ Formulas needn't be hard.
 This project is still in its infancy. But just you wait—they grow up so fast.
 
 ## Technologies
-This project was built with Swift.
+This project was built with Swift 5.
 
 ## License
 This project shall be licensed under GNU GPL v3.0.
