@@ -1,4 +1,4 @@
-// RV_ContentPreview.swift
+// GV_ContentPreview.swift
 // Mimosa: Working title; non-working project.
 
 // Created on 2/1/21
@@ -6,33 +6,36 @@
 
 // GNU General Public License v3.0
 
-// A preview of formulas.
+// A preview of formulas, categories, or terms.
 
 
 import SwiftUI
 
+/// Used by `GV_ContentPreview` to determine the type of content to preview.
 enum PreviewType { case formula, category, term }
 
-struct RV_ContentPreview: View {
+/// A view that offers a condensed preview with a name and an image.
+struct GV_ContentPreview: View {
     
-    let title: String
+    let heading: String
     let type: PreviewType       // TODO: Will be used to modify this view to fit its use case.
     
     var body: some View {
         
         VStack(alignment: .leading) {
             
-            Text(self.title)
+            Text(self.heading)
                 .font(.headline)
                 .foregroundColor(.white)
             
-            // Placeholder content
+            // TODO: Placeholder content
             Rectangle()
-                .foregroundColor(.secondary)
+                .foregroundColor(.gray)
+                .opacity(0.75)
                 .overlay(
                     Text("Placeholder image")
+                        .applyPlaceholderTextStyle(withBorder: false)
                         .foregroundColor(.white)
-                        .font(.system(.body, design: .monospaced))
                 )
             
         }
@@ -44,11 +47,11 @@ struct RV_ContentPreview: View {
     
 }
 
-struct RV_ContentPreview_Previews: PreviewProvider {
+struct GV_ContentPreview_Previews: PreviewProvider {
     static var previews: some View {
         
-        // Placeholder content
-        RV_ContentPreview(title: "Placeholder name", type: .formula)
+        // Placeholder values for title and type.
+        GV_ContentPreview(heading: "Placeholder name", type: .formula)
             .frame(height: 175)
             .padding()
             .previewLayout(.sizeThatFits)

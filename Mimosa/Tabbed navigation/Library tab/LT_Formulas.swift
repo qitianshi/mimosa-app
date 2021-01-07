@@ -18,9 +18,9 @@ struct LT_Formulas: View {
             
             LazyVGrid(columns: [ GridItem(.adaptive(minimum: 300)) ]) {
                 
-                // Placeholder content
+                // TODO: Placeholder content
                 ForEach((0...3), id: \.self) { _ in
-                    RV_ContentPreview(title: "Formula name", type: .formula)
+                    GV_ContentPreview(heading: "Formula name", type: .formula)
                         .frame(height: 175)
                 }
                 
