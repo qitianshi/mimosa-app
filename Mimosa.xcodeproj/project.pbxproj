@@ -98,7 +98,7 @@
 			children = (
 				31D05750259E02EE00257884 /* MimosaApp.swift */,
 				31D05752259E02EE00257884 /* ContentView.swift */,
-				31D0576A259E05ED00257884 /* Tabbed navigation */,
+				31D0576A259E05ED00257884 /* Navigation tabs */,
 				3195570F25A06E3F0087AECB /* Generic views */,
 				31D05754259E02EF00257884 /* Assets.xcassets */,
 				31D05759259E02EF00257884 /* Info.plist */,
@@ -115,14 +115,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		31D0576A259E05ED00257884 /* Tabbed navigation */ = {
+		31D0576A259E05ED00257884 /* Navigation tabs */ = {
 			isa = PBXGroup;
 			children = (
 				31D0576B259E060700257884 /* BrowseTab.swift */,
 				314C8BCE259EFEE1000BF89C /* Library tab */,
 				31D05771259E061E00257884 /* SearchTab.swift */,
 			);
-			path = "Tabbed navigation";
+			path = "Navigation tabs";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
