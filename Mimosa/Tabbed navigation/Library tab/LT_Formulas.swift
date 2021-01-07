@@ -14,10 +14,21 @@ import SwiftUI
 struct LT_Formulas: View {
     var body: some View {
         
-        // Placeholder content
-        Text("LT_Formulas.swift")
-            .font(.system(.body, design: .monospaced))
-            .navigationTitle("Formulas")
+        ScrollView {
+            
+            LazyVGrid(columns: [ GridItem(.adaptive(minimum: 300)) ]) {
+                
+                // TODO: Placeholder content
+                ForEach((0...3), id: \.self) { _ in
+                    GV_ContentPreview(heading: "Formula name", type: .formula)
+                        .frame(height: 175)
+                }
+                
+            }
+            .padding()
+            
+        }
+        .navigationTitle("Formulas")
         
     }
 }
