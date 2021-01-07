@@ -14,15 +14,15 @@ import SwiftUI
 struct LibraryTab: View {
     
     // Content of each list row is stored in an array so they can be generated programmatically.
-    private let LT_listItems = [LT_ListItem(imageName: "function",
-                                            text: "Formulas",
-                                            link: AnyView(LT_Formulas())),
-                                LT_ListItem(imageName: "book.closed",
-                                            text: "Categories",
-                                            link: AnyView(LT_Categories())),
-                                LT_ListItem(imageName: "sum",
-                                            text: "Terms",
-                                            link: AnyView(LT_Terms()))]
+    private static let listItems = [LT_ListItem(imageName: "function",
+                                                text: "Formulas",
+                                                link: AnyView(LT_Formulas())),
+                                    LT_ListItem(imageName: "book.closed",
+                                                text: "Categories",
+                                                link: AnyView(LT_Categories())),
+                                    LT_ListItem(imageName: "sum",
+                                                text: "Terms",
+                                                link: AnyView(LT_Terms()))]
     
     var body: some View {
         NavigationView {
@@ -30,7 +30,7 @@ struct LibraryTab: View {
             List {
                 
                 // Organizes user's entire library
-                ForEach(LT_listItems) { item in
+                ForEach(LibraryTab.listItems) { item in
                     NavigationLink(destination: item.link) {
                         LT_ListRow(listItem: item)
                     }
