@@ -1,10 +1,10 @@
 // LT_Formulas.swift
-// Mimosa: Working title; non-working project.
 
 // Created on 1/1/21
+// Contributors: Qi Tianshi
 // Swift 5.0
 
-// GNU General Public License v3.0
+// Mimosa: Working title; non-working project.
 
 // Shows all of the user's saved formulas.
 
