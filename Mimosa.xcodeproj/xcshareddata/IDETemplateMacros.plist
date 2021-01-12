@@ -4,12 +4,12 @@
 <dict>
 	<key>FILEHEADER</key>
 	<string> ___FILENAME___
-// ___PROJECTNAME___: Working title; non-working project.
 
 // Created on ___DATE___
+// Contributors: ___FULLUSERNAME___
 // Swift ___DEFAULTTOOLCHAINSWIFTVERSION___
 
-// GNU General Public License v3.0
+// ___PROJECTNAME___: Working title; non-working project.
 
 // description
 </string>

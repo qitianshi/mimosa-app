@@ -11,17 +11,20 @@
 		31D05753259E02EE00257884 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D05752259E02EE00257884 /* ContentView.swift */; };
 		31D05755259E02EF00257884 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31D05754259E02EF00257884 /* Assets.xcassets */; };
 		31D05758259E02EF00257884 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31D05757259E02EF00257884 /* Preview Assets.xcassets */; };
-		31D05761259E031F00257884 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 31D05760259E031F00257884 /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3106FA6825AD2E0E0055D7A7 /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
+		3106FA8125AD4B110055D7A7 /* pull_request_template.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = pull_request_template.md; sourceTree = "<group>"; };
+		314A721925A974A9003C18E6 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
+		314A721B25A975C6003C18E6 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		314A721D25A9B4A7003C18E6 /* Contributor Agreement.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Contributor Agreement.md"; sourceTree = "<group>"; };
 		31D0574D259E02EE00257884 /* Mimosa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mimosa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31D05750259E02EE00257884 /* MimosaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimosaApp.swift; sourceTree = "<group>"; };
 		31D05752259E02EE00257884 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		31D05754259E02EF00257884 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31D05757259E02EF00257884 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		31D05759259E02EF00257884 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		31D05760259E031F00257884 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		31D05765259E03B100257884 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -36,12 +39,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3106FA8025AD465C0055D7A7 /* .github */ = {
+			isa = PBXGroup;
+			children = (
+				3106FA8125AD4B110055D7A7 /* pull_request_template.md */,
+			);
+			path = .github;
+			sourceTree = "<group>";
+		};
+		314A721C25A9B488003C18E6 /* docs */ = {
+			isa = PBXGroup;
+			children = (
+				314A721925A974A9003C18E6 /* CONTRIBUTING.md */,
+				3106FA6825AD2E0E0055D7A7 /* CODE_OF_CONDUCT.md */,
+				314A721D25A9B4A7003C18E6 /* Contributor Agreement.md */,
+			);
+			path = docs;
+			sourceTree = "<group>";
+		};
 		31D05744259E02EE00257884 = {
 			isa = PBXGroup;
 			children = (
 				31D0574F259E02EE00257884 /* Mimosa */,
 				31D05765259E03B100257884 /* README.md */,
-				31D05760259E031F00257884 /* LICENSE */,
+				314A721B25A975C6003C18E6 /* LICENSE.md */,
+				314A721C25A9B488003C18E6 /* docs */,
+				3106FA8025AD465C0055D7A7 /* .github */,
 				31D0574E259E02EE00257884 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -131,7 +154,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31D05761259E031F00257884 /* LICENSE in Resources */,
 				31D05758259E02EF00257884 /* Preview Assets.xcassets in Resources */,
 				31D05755259E02EF00257884 /* Assets.xcassets in Resources */,
 			);
