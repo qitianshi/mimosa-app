@@ -20,7 +20,7 @@ You're welcome to contribute to this project!
 
 To contribute directly, [fork this repository](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo), make your edits, [submit a pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests), and in time it'll be merged. Or, you can [submit an issue on GitHub](https://guides.github.com/features/issues/) to discuss tasks, enhancements, and bugs.
 
-If you're contributing to Mimosa for the first time, see the [Contributor guidelines](./CONTRIBUTING.md).
+If you're contributing to Mimosa for the first time, see the [Contributor guidelines](./docs/CONTRIBUTING.md).
 
 ## Status
 This project is actively being developed, though it's still in its infancy. But just you wait—they grow up so fast.
@@ -40,7 +40,7 @@ I'd like to thank the people and communities who've made this project possible:
 You're allowed limited rights to use and share my work, with a few conditions. Here's a summary:
 
 You're free to:
-* __view and fork this repository__ on GitHub, as laid out in GitHub's Terms of Service;
+* __view and fork this repository__ on GitHub;
 * __copy and redistribute__ this work in any format or medium, such as for educational purposes; and
 * __modify or build upon this work (except trademarks)__, such as for your own projects;
 

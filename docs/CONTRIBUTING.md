@@ -3,11 +3,11 @@ Thank you so much for your interest in contributing to Mimosa! These guidelines 
 
 * [How to contribute](#How-to-contribute)
 * [Best practices](#Best-practices)
- * [In your code](#In-your-code)
- * [On GitHub](#On-GitHub)
+    - [In your code](#In-your-code)
+    - [On GitHub](#On-GitHub)
 * [Style guides](#Style-guides)
- * [Header comments](#Header-comments)
- * [Whitespace](#Whitespace)
+    - [Header comments](#Header-comments)
+    - [Whitespace](#Whitespace)
 * [The Contributor Agreement](#The-Contributor-Agreement)
 
 ## How to contribute
@@ -25,9 +25,9 @@ If you want to suggest a feature, report a bug, or discuss questions about Mimos
 ### Contributing code
 You're welcome to contribute directly to Mimosa! Here's how:
 1. [Fork this repository.](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo)
-2. [Create a branch.](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-and-deleting-branches-within-your-repository).
+2. [Create a branch.](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-and-deleting-branches-within-your-repository)
 3. Make and commit your edits. 
-4. [Create your pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests).
+4. [Create your pull request.](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests)
 5. We'll let you know if there are any issues that you might need to address.
 6. When everything looks good, we'll merge your branch. Congrats! You're the newest contributor to Mimosa.
 
@@ -99,7 +99,7 @@ You'll need to add a brief description of what the file does. If you're working 
 Note that there should be __two__ empty lines between the `description` line and the first line of your code.
 
 ### Whitespace
-Give your code a little rooom to breathe.
+Give your code a little room to breathe.
 
 Add a single character whitespace:
 * around operators: `foo = bar`

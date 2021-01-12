@@ -1,7 +1,7 @@
 # Contributor Agreement
 Effective as of 11 January 2021
 
-This Contributor Agreement ("Agreement") is an agreement between Qi Tianshi, the owner of this repository ("Owner"), and You, any individual or entity who wishes to Contribute to this repository by committing code, or submiting issues or pull requests ("You", "Your", "Yourself", "Contributor"). By committing code, or submitting issues or pull requests ("Contributing", "Contribution"), You signify that You have read this Agreement, and agree to comply with its terms as a Contributor.
+This Contributor Agreement ("Agreement") is an agreement between Qi Tianshi, the owner of this repository ("Owner"), and You, any individual or entity who wishes to Contribute to this repository by committing code, or submitting issues or pull requests ("You", "Your", "Yourself", "Contributor"). By committing code, or submitting issues or pull requests ("Contributing", "Contribution"), You signify that You have read this Agreement, and agree to comply with its terms as a Contributor.
 
 ## 1. Licensing
 By Contributing, You agree to grant the Owner a non-exclusive, worldwide, perpetual, royalty-free, irrevocable right and license to use, reproduce, modify, redistribute, and otherwise commercially and non-commercially exploit any and all Contributions made by You for any purpose; and to sublicense the foregoing rights to any other party affiliated with the Owner.

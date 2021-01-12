@@ -1,7 +1,7 @@
 # Public Copyright License
 Effective as of 11 January 2021.
 
-This Public Copyright License ("License Agreement") is an agreement between Qi Tianshi, the copyright holder of this work ("Owner"), and You, any individual or entity ("You", "Your", "Yourself", "Licensee") who wishes to exercise the rights granted by this License Agreement to use the work belonging to the Owner in this repository ("Work"). By using, redistributing, and/or modifying the Work in any way, You signify that You have read this License Agreement, and agree to comply with its terms as a Licensee.  
+This Public Copyright License ("License Agreement") is an agreement between Qi Tianshi, the copyright holder of this work ("Owner"), and You, any individual or entity ("You", "Your", "Yourself", "Licensee") who wishes to exercise the rights granted by this License Agreement to use content in this repository ("Work"). By using, redistributing, and/or modifying the Work in any way, You signify that You have read this License Agreement, and agree to comply with its terms as a Licensee.  
 
 The Owner owns all proprietary rights in and to the copyrightable and/or copyrighted works described in this License Agreement. The Owner retains all rights in and to the Work, which are not transferred herein.
 
