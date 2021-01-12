@@ -16,6 +16,8 @@
 /* Begin PBXFileReference section */
 		3106FA6825AD2E0E0055D7A7 /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
 		3106FA8125AD4B110055D7A7 /* pull_request_template.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = pull_request_template.md; sourceTree = "<group>"; };
+		3106FA8C25AD6E5F0055D7A7 /* bug_report.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = bug_report.md; sourceTree = "<group>"; };
+		3106FA8D25AD6E6A0055D7A7 /* feature_request.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = feature_request.md; sourceTree = "<group>"; };
 		314A721925A974A9003C18E6 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
 		314A721B25A975C6003C18E6 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		314A721D25A9B4A7003C18E6 /* Contributor Agreement.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Contributor Agreement.md"; sourceTree = "<group>"; };
@@ -43,8 +45,18 @@
 			isa = PBXGroup;
 			children = (
 				3106FA8125AD4B110055D7A7 /* pull_request_template.md */,
+				3106FA8B25AD6E4F0055D7A7 /* ISSUE_TEMPLATE */,
 			);
 			path = .github;
+			sourceTree = "<group>";
+		};
+		3106FA8B25AD6E4F0055D7A7 /* ISSUE_TEMPLATE */ = {
+			isa = PBXGroup;
+			children = (
+				3106FA8C25AD6E5F0055D7A7 /* bug_report.md */,
+				3106FA8D25AD6E6A0055D7A7 /* feature_request.md */,
+			);
+			path = ISSUE_TEMPLATE;
 			sourceTree = "<group>";
 		};
 		314A721C25A9B488003C18E6 /* docs */ = {
