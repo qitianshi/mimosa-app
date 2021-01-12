@@ -3,9 +3,11 @@ Thank you so much for your interest in contributing to Mimosa! These guidelines 
 
 * [How to contribute](#How-to-contribute)
 * [Best practices](#Best-practices)
- * In your code
- * On GitHub
+ * [In your code](#In-your-code)
+ * [On GitHub](#On-GitHub)
 * [Style guides](#Style-guides)
+ * [Header comments](#Header-comments)
+ * [Whitespace](#Whitespace)
 * [The Contributor Agreement](#The-Contributor-Agreement)
 
 ## How to contribute
