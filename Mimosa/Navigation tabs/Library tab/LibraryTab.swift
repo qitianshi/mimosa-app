@@ -1,10 +1,10 @@
 // LibraryTab.swift
-// Mimosa: Working title; non-working project.
 
 // Created on 31/12/20
+// Contributors: Qi Tianshi
 // Swift 5.0
 
-// GNU General Public License v3.0
+// Mimosa: Working title; non-working project.
 
 // The Library tab houses the user's saved formulas and notes.
 

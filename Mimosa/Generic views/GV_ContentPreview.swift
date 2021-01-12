@@ -1,10 +1,10 @@
 // GV_ContentPreview.swift
-// Mimosa: Working title; non-working project.
 
 // Created on 2/1/21
+// Contributors: Qi Tianshi
 // Swift 5.0
 
-// GNU General Public License v3.0
+// Mimosa: Working title; non-working project.
 
 // A preview of formulas, categories, or terms.
 
