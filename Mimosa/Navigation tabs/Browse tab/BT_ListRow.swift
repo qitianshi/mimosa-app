@@ -1,10 +1,10 @@
 // BT_ListRow.swift
-// Mimosa: Working title; non-working project.
 
 // Created on 7/1/21
+// Contributors: Qi Tianshi
 // Swift 5.0
 
-// GNU General Public License v3.0
+// Mimosa: Working title; non-working project.
 
 // A single row in the NavigationView List in BrowseTab.
 
