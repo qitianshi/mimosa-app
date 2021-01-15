@@ -48,7 +48,6 @@ struct LibraryTab: View {
                     LazyVStack {
                         ForEach((0...3), id: \.self) { _ in
                             ContentPreview(heading: "Formula name", contentType: .formula)
-                                .frame(height: 175)
                         }
                     }
                     

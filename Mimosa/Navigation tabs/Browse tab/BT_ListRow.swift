@@ -39,7 +39,7 @@ struct BT_ListRow: View {
                         
                         // TODO: Placeholder content
                         ContentPreview(heading: "Preview \(i + 1)", contentType: self.previewType)
-                            .frame(width: 200, height: 120)
+                            .frame(width: 200)
                         
                     }
                 }
@@ -59,7 +59,6 @@ struct BT_ListRow_Previews: PreviewProvider {
         
         // Placeholder values for heading and previewType.
         BT_ListRow(heading: "Formulas", previewType: .formula)
-            .frame(height: 200)
             .previewLayout(.sizeThatFits)
         
     }

@@ -15,10 +15,25 @@ import SwiftUI
 enum PreviewContentType { case formula, category, term }
 
 /// A view that offers a condensed preview with a name and an image.
+///
+/// A `Frame` should be used to set the width of the preview. Its height is predetermined based on its `contentType`.
 struct ContentPreview: View {
     
     let heading: String
     let contentType: PreviewContentType       // TODO: Will be used to modify this view to fit its use case.
+    
+    private var height: CGFloat {
+        get {
+            switch self.contentType {
+            
+            case .formula:
+                return 175
+            case .category, .term:
+                return 150
+                
+            }
+        }
+    }
     
     var body: some View {
         
@@ -30,7 +45,7 @@ struct ContentPreview: View {
             
             // TODO: Placeholder content
             Rectangle()
-                .foregroundColor(.gray)
+                .foregroundColor(.black)
                 .opacity(0.75)
                 .overlay(
                     Text("Placeholder image")
@@ -40,8 +55,9 @@ struct ContentPreview: View {
             
         }
         .padding()
-        .background(Color.blue)
+        .background(Color.secondary)
         .clipShape( RoundedRectangle(cornerRadius: 10.0, style: .continuous) )
+        .frame(height: self.height)
         
     }
     
@@ -52,7 +68,6 @@ struct ContentPreview_Previews: PreviewProvider {
         
         // Placeholder values for title and type.
         ContentPreview(heading: "Placeholder name", contentType: .formula)
-            .frame(height: 175)
             .padding()
             .previewLayout(.sizeThatFits)
         
