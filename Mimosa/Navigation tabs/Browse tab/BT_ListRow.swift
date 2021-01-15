@@ -39,7 +39,6 @@ struct BT_ListRow: View {
                         
                         // TODO: Placeholder content
                         ContentPreview(heading: "Preview \(i + 1)", type: self.previewType)
-                            .frame(width: 200)
                         
                     }
                 }

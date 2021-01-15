@@ -16,11 +16,11 @@ struct LT_Formulas: View {
         
         ScrollView {
             
-            LazyVGrid(columns: [ GridItem(.adaptive(minimum: 300)) ]) {
+            LazyVGrid(columns: [ GridItem(.adaptive(minimum: ContentPreview.DimensionPresets.formula.width!)) ]) {
                 
                 // TODO: Placeholder content
                 ForEach((0...3), id: \.self) { _ in
-                    ContentPreview(heading: "Formula name", type: .formula)
+                    ContentPreview(heading: "Formula name", type: .formula, width: .fill)
                 }
                 
             }

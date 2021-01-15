@@ -38,10 +38,12 @@ struct ContentPreview: View {
     private var dimensions: Dimensions
     
     /// Presets for the default dimensions of previews for different preview types.
+    ///
+    /// Force-unwrap these values when using them.
     enum DimensionPresets {
         static let formula = PreviewDimensions(width: 300, height: 175)
         static let category = PreviewDimensions(width: 150, height: 150)
-        static let term = PreviewDimensions(width: 175, height: 175)
+        static let term = PreviewDimensions(width: 150, height: 175)
     }
     
     var body: some View {
@@ -65,7 +67,7 @@ struct ContentPreview: View {
             
         }
         .padding()
-        .background(Color.secondary)
+        .background(Color.gray)
         .clipShape( RoundedRectangle(cornerRadius: 10.0, style: .continuous) )
         .frame(width: self.dimensions.width, height: self.dimensions.height)        // If the width or height parameters are nil, SwiftUI expands the frame to fill that area.
             
@@ -93,6 +95,8 @@ struct ContentPreview: View {
     ///   - height: The height of the preview.
     ///
     /// You can use `ContentPreview(heading:type:width:height:)` to override the predefined dimensions for each preview and instruct `ContentPreview` to use a custom size or fill the area it's given.
+    ///
+    /// If the preview is to be used in a `LazyVGrid` or `LazyHGrid`, set the `width` or `height` respectively to `.fill`.
     init(heading: String, type: PreviewType, width: PreviewDimensionValue = .automatic, height: PreviewDimensionValue = .automatic) {
         
         self.heading = heading

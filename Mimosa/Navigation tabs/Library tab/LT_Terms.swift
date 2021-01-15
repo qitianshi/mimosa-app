@@ -16,11 +16,11 @@ struct LT_Terms: View {
         
         ScrollView {
             
-            LazyVGrid(columns: [ GridItem(.adaptive(minimum: 150)) ]) {
+            LazyVGrid(columns: [ GridItem(.adaptive(minimum: ContentPreview.DimensionPresets.term.width!)) ]) {
                 
                 // TODO: Placeholder content
                 ForEach((0...7), id: \.self) { _ in
-                    ContentPreview(heading: "Term name", type: .term)
+                    ContentPreview(heading: "Term name", type: .term, width: .fill)
                 }
                 
             }

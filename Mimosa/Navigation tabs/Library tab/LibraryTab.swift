@@ -47,7 +47,7 @@ struct LibraryTab: View {
                     // TODO: Placeholder content
                     LazyVStack {
                         ForEach((0...3), id: \.self) { _ in
-                            ContentPreview(heading: "Formula name", type: .formula)
+                            ContentPreview(heading: "Formula name", type: .formula, width: .fill)
                         }
                     }
                     
