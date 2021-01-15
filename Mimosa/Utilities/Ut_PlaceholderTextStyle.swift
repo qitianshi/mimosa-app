@@ -1,4 +1,4 @@
-// GV_PlaceholderTextStyle.swift
+// Ut_PlaceholderTextStyle.swift
 
 // Created on 5/1/21
 // Contributors: Qi Tianshi
@@ -11,31 +11,21 @@
 
 import SwiftUI
 
-fileprivate struct GV_PlaceholderTextStyle: ViewModifier {
+fileprivate struct Ut_PlaceholderTextStyle: ViewModifier {
     
-    // Used to request a gray border around the text.
-    let addBorder: Bool
+    let addBorder: Bool     // Used to request a gray border around the text.
     
     func body(content: Content) -> some View {
         
-        // Both cases for addBorder require the .font() modifier, so this is the base case.
-        let noBorder = AnyView(
-            content
-                .font(.system(.body, design: .monospaced))
-        )
-        
-        // If a border is requested, additional view modifiers are added.
-        if self.addBorder {
-            return AnyView(
-                
-                noBorder
+        content
+            .font(.system(.body, design: .monospaced))
+            .conditionalModifier(if: addBorder) {
+                $0
                     .foregroundColor(.white)
                     .padding()
                     .background(Color.gray)
                     .clipShape(RoundedRectangle(cornerRadius: 10.0, style: .continuous))
-                
-            )
-        } else { return noBorder }
+            }
         
     }
     
@@ -50,12 +40,15 @@ extension View {
     ///
     /// Use `withBorder` if the `Text` view is appearing in isolation, such as when it's used to display a filename before other content is added. Otherwise, if it's used in the context of another view, avoid adding a border. Because the border will be padded, remember that this will increase the size of the view this modifier is applied to, which may not be desirable.
     func applyPlaceholderTextStyle(withBorder: Bool = true) -> some View {
-        self.modifier(GV_PlaceholderTextStyle(addBorder: withBorder))
+        
+        self
+            .modifier(Ut_PlaceholderTextStyle(addBorder: withBorder))
+        
     }
     
 }
 
-struct GV_PlaceholderTextStyle_Previews: PreviewProvider {
+struct Ut_PlaceholderTextStyle_Previews: PreviewProvider {
     static var previews: some View {
         
         Group {
