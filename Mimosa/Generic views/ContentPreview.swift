@@ -63,6 +63,7 @@ struct ContentPreview: View {
                     Text("Placeholder image")
                         .applyPlaceholderTextStyle(withBorder: false)
                         .foregroundColor(.white)
+                        .padding()
                 )
             
         }
