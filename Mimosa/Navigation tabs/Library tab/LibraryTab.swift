@@ -47,7 +47,7 @@ struct LibraryTab: View {
                     // TODO: Placeholder content
                     LazyVStack {
                         ForEach((0...3), id: \.self) { _ in
-                            GV_ContentPreview(heading: "Formula name", contentType: .formula)
+                            ContentPreview(heading: "Formula name", contentType: .formula)
                                 .frame(height: 175)
                         }
                     }

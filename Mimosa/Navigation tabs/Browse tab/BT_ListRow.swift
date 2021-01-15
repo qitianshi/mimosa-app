@@ -38,7 +38,7 @@ struct BT_ListRow: View {
                     ForEach((0...3), id: \.self) { i in
                         
                         // TODO: Placeholder content
-                        GV_ContentPreview(heading: "Preview \(i + 1)", contentType: self.previewType)
+                        ContentPreview(heading: "Preview \(i + 1)", contentType: self.previewType)
                             .frame(width: 200, height: 120)
                         
                     }

@@ -20,7 +20,7 @@ struct LT_Formulas: View {
                 
                 // TODO: Placeholder content
                 ForEach((0...3), id: \.self) { _ in
-                    GV_ContentPreview(heading: "Formula name", contentType: .formula)
+                    ContentPreview(heading: "Formula name", contentType: .formula)
                         .frame(height: 175)
                 }
                 
