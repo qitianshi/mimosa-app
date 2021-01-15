@@ -11,8 +11,7 @@
 
 import SwiftUI
 
-/// Used by `GV_ContentPreview` to determine the type of content to preview.
-enum PreviewContentType { case formula, category, term }
+typealias PreviewType = ContentPreview.ContentType
 
 /// A view that offers a condensed preview with a name and an image.
 ///
@@ -20,11 +19,14 @@ enum PreviewContentType { case formula, category, term }
 struct ContentPreview: View {
     
     let heading: String
-    let contentType: PreviewContentType       // TODO: Will be used to modify this view to fit its use case.
+    
+    /// The type of content to preview.
+    enum ContentType { case formula, category, term }
+    let type: ContentPreview.ContentType
     
     private var height: CGFloat {
         get {
-            switch self.contentType {
+            switch self.type {
             
             case .formula:
                 return 175
@@ -40,6 +42,7 @@ struct ContentPreview: View {
         VStack(alignment: .leading) {
             
             Text(self.heading)
+                .applyPlaceholderTextStyle(withBorder: false)
                 .font(.headline)
                 .foregroundColor(.white)
             
@@ -67,7 +70,7 @@ struct ContentPreview_Previews: PreviewProvider {
     static var previews: some View {
         
         // Placeholder values for title and type.
-        ContentPreview(heading: "Placeholder name", contentType: .formula)
+        ContentPreview(heading: "Placeholder name", type: .formula)
             .padding()
             .previewLayout(.sizeThatFits)
         

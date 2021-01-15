@@ -20,7 +20,7 @@ struct LT_Categories: View {
                 
                 // TODO: Placeholder content
                 ForEach((0...7), id: \.self) { _ in
-                    ContentPreview(heading: "Category name", contentType: .category)
+                    ContentPreview(heading: "Category name", type: .category)
                 }
                 
             }
