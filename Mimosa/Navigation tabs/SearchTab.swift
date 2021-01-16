@@ -12,13 +12,24 @@
 import SwiftUI
 
 struct SearchTab: View {
+    
+    @State var searchQuery: String = ""
+    
     var body: some View {
+        NavigationView {
         
-        // TOOD: Placeholder content
-        Text("SearchTab.swift")
-            .applyPlaceholderTextStyle()
+            VStack {
+                
+                SearchBar(query: $searchQuery, placeholderText: "Formulas, categories, terms, and more")
+                
+                Spacer()
+                    
+            }
+            .navigationTitle("Search")
         
+        }
     }
+    
 }
 
 struct SearchTab_Previews: PreviewProvider {

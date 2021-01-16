@@ -17,7 +17,7 @@ import SwiftUI
 struct SearchBar: UIViewRepresentable {
     
     /// The text input received by `SearchBar`,
-    @Binding var searchQuery: String
+    @Binding var query: String
     
     /// The placeholder text that will be displayed when the search bar is empty.
     let placeholderText: String
@@ -38,7 +38,7 @@ struct SearchBar: UIViewRepresentable {
     
     // Instructs SwiftUI how to update the view when changes happen to its state. Required by UIViewRepresentable.
     func updateUIView(_ uiView: UISearchBar, context: Context) {
-        uiView.text = searchQuery
+        uiView.text = query
     }
     
     // Creates a model for a Coordinator that allows SearchBar to use the UISearchBarDelegate.
@@ -59,7 +59,7 @@ struct SearchBar: UIViewRepresentable {
     
     // Initializes the coordinator with the binding variable.
     func makeCoordinator() -> SearchBar.Coordinator {
-        return Coordinator(searchQuery: $searchQuery)
+        return Coordinator(searchQuery: $query)
     }
     
     /*
@@ -75,7 +75,7 @@ struct SearchBar: UIViewRepresentable {
 struct SearchBarPreview_Previews: PreviewProvider {
     static var previews: some View {
         
-        SearchBar(searchQuery: .constant(""), placeholderText: "Placeholder text")
+        SearchBar(query: .constant(""), placeholderText: "Placeholder text")
             .previewLayout(.sizeThatFits)
         
     }
