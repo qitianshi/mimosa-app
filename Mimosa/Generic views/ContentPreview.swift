@@ -71,7 +71,7 @@ struct ContentPreview: View {
         .background(Color.gray)
         .clipShape( RoundedRectangle(cornerRadius: 10.0, style: .continuous) )
         .frame(width: self.dimensions.width, height: self.dimensions.height)        // If the width or height parameters are nil, SwiftUI expands the frame to fill that area.
-            
+        
     }
     
     /// A dimension (the height or width) of a `ContentPreview`.
