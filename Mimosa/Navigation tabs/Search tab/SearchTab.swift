@@ -25,7 +25,10 @@ struct SearchTab: View {
                     .padding(.vertical, -SearchBar.DefaultPadding.vertical)
                     .padding(.horizontal)
                 
-                Spacer()
+                ScrollView {
+                    ST_Recents()
+                        .padding()
+                }
                     
             }
             .navigationTitle("Search")
