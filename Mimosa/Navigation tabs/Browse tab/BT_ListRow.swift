@@ -11,17 +11,20 @@
 
 import SwiftUI
 
-/// Model for information that describes each list row.
-struct BT_ListItem: Identifiable {
-    var id = UUID()
-    var heading: String
-    var previewType: PreviewType
-}
+/// Model for information that describes each list row in `BrowseTab`.
+typealias BT_ListItem = BT_ListRow.ListItem
 
 struct BT_ListRow: View {
     
     let heading: String
     let previewType: PreviewType
+    
+    /// Model for information that describes each list row.
+    struct ListItem: Identifiable {
+        var id = UUID()
+        var heading: String
+        var previewType: PreviewType
+    }
     
     var body: some View {
         

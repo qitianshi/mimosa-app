@@ -11,17 +11,20 @@
 
 import SwiftUI
 
-/// Model for information that describes each list row.
-struct LT_ListItem: Identifiable {
-    var id = UUID()
-    let imageName: String
-    let text: String
-    let link: AnyView
-}
+/// Model for information that describes each list row in `LibraryTab`.
+typealias LT_ListItem = LT_ListRow.ListItem
 
 struct LT_ListRow: View {
     
     let listItem: LT_ListItem
+    
+    /// Model for information that describes each list row.
+    struct ListItem: Identifiable {
+        var id = UUID()
+        let imageName: String
+        let text: String
+        let link: AnyView
+    }
     
     var body: some View {
         
