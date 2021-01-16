@@ -51,6 +51,24 @@ struct SearchBar: UIViewRepresentable {
             self.searchQuery = searchText
         }
         
+        // If text is typed into the search bar, it displays a cancel button.
+        func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+            searchBar.setShowsCancelButton(true, animated: true)
+        }
+        
+        // If the search button (on the keyboard) is tapped, the cancel button and keyboard are hidden.
+        func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+            searchBar.resignFirstResponder()        // Hides keyboard
+            searchBar.setShowsCancelButton(false, animated: true)
+        }
+        
+        // If the cancel button is tapped, the cancel button and keyboard are cleared, and the text is cleared.
+        func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+            self.searchQuery = ""
+            searchBar.resignFirstResponder()        // Hides keyboard.
+            searchBar.setShowsCancelButton(false, animated: true)
+        }
+        
         init(searchQuery: Binding<String>) {
             _searchQuery = searchQuery
         }
@@ -69,6 +87,19 @@ struct SearchBar: UIViewRepresentable {
      variable, which in turn is bound to the binding variable in SearchBar, which is
      then passed to a state variable.
      */
+    
+}
+
+extension SearchBar {
+    
+    // There is no way to request UIKit to not add the border, so this is the best solution.
+    /// The default padding that UIKit adds around `UISearchBar`.
+    ///
+    /// Use these values to remove the padding around `SearchBar` in SwiftUI using a `frame` with negative values.
+    enum DefaultPadding {
+        static let horizontal: CGFloat = 8
+        static let vertical: CGFloat = 10
+    }
     
 }
 
