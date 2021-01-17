@@ -15,7 +15,7 @@ struct ST_Recents: View {
     var body: some View {
         
         // Recently added formulas
-        VStack(alignment: .leading) {
+        LazyVStack(alignment: .leading) {
             
             Text("Recently viewed")
                 .font(.title2)
