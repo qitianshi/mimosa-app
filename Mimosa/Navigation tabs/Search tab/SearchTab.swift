@@ -17,22 +17,22 @@ struct SearchTab: View {
     
     var body: some View {
         NavigationView {
-        
-            VStack {
-                
-                SearchBar(query: $searchQuery, placeholderText: "Formulas, categories, terms, and more")
-                    .padding(.horizontal, -SearchBar.DefaultPadding.horizontal)
-                    .padding(.vertical, -SearchBar.DefaultPadding.vertical)
-                    .padding(.horizontal)
-                
-                ScrollView {
+            
+            ScrollView {
+                VStack {
+                    
+                    SearchBar(query: $searchQuery, placeholderText: "Formulas, categories, terms, and more")
+                        .padding(.horizontal, -SearchBar.DefaultPadding.horizontal)
+                        .padding(.vertical, -SearchBar.DefaultPadding.vertical)
+                        .padding(.horizontal)
+                    
                     ST_Recents()
                         .padding()
-                }
                     
+                }
             }
             .navigationTitle("Search")
-        
+            
         }
     }
     
