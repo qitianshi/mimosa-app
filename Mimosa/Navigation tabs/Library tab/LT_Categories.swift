@@ -16,12 +16,11 @@ struct LT_Categories: View {
         
         ScrollView {
             
-            LazyVGrid(columns: [ GridItem(.adaptive(minimum: 150)) ]) {
+            LazyVGrid(columns: [ GridItem(.adaptive(minimum: ContentPreview.DimensionPresets.category.width!)) ]) {
                 
                 // TODO: Placeholder content
-                ForEach((0...7), id: \.self) { _ in
-                    GV_ContentPreview(heading: "Category name", type: .category)
-                        .frame(height: 175)
+                ForEach((0...9), id: \.self) { _ in
+                    ContentPreview(heading: "Category name", type: .category, width: .fill)
                 }
                 
             }
