@@ -11,17 +11,20 @@
 
 import SwiftUI
 
-/// Model for information that describes each list row.
-struct BT_ListItem: Identifiable {
-    var id = UUID()
-    var heading: String
-    var previewType: PreviewType
-}
+/// Model for information that describes each list row in `BrowseTab`.
+typealias BT_ListItem = BT_ListRow.ListItem
 
 struct BT_ListRow: View {
     
     let heading: String
     let previewType: PreviewType
+    
+    /// Model for information that describes each list row.
+    struct ListItem: Identifiable {
+        var id = UUID()
+        var heading: String
+        var previewType: PreviewType
+    }
     
     var body: some View {
         
@@ -38,8 +41,7 @@ struct BT_ListRow: View {
                     ForEach((0...3), id: \.self) { i in
                         
                         // TODO: Placeholder content
-                        GV_ContentPreview(heading: "Preview \(i + 1)", type: self.previewType)
-                            .frame(width: 200, height: 120)
+                        ContentPreview(heading: "Preview \(i + 1)", type: self.previewType)
                         
                     }
                 }
@@ -59,7 +61,6 @@ struct BT_ListRow_Previews: PreviewProvider {
         
         // Placeholder values for heading and previewType.
         BT_ListRow(heading: "Formulas", previewType: .formula)
-            .frame(height: 200)
             .previewLayout(.sizeThatFits)
         
     }
