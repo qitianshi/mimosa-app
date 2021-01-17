@@ -50,7 +50,10 @@ struct LT_ListRow_Previews: PreviewProvider {
     static var previews: some View {
         
         // Placeholder values for imageName and text.
-        LT_ListRow(listItem: LT_ListItem(imageName: "function", text: "Formulas", link: AnyView(LT_Formulas())))
+        LT_ListRow(listItem: LT_ListItem(imageName: "function",
+                                         text: "Formulas",
+                                         link: AnyView(LT_ListDetail(title: "Formulas",
+                                                                     contentType: .formula))))
             .previewLayout(.sizeThatFits)
         
     }
