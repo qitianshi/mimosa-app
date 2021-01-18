@@ -78,7 +78,7 @@ __Follow the template, but exercise your judgment.__ When submitting an issue or
 We like keeping a consistent style in our code, issues, and pull requests. Follow these guides to make your code readable for everyone.
 
 ### Header comments
- The [IDETemplateMacros.plist](./Mimosa.xcodeproj/xcshareddata/IDETemplateMacros.plist) sets a header comment template that should be used when new files are created. If you're not using Xcode, or for whatever reason the correct header comment is not generated, this is what it should look like:
+ The [IDETemplateMacros.plist](https://github.com/qitianshi/mimosa-app/blob/main/Mimosa.xcodeproj/xcshareddata/IDETemplateMacros.plist) sets a header comment template that should be used when new files are created. If you're not using Xcode, or for whatever reason the correct header comment is not generated, this is what it should look like:
  
  ```
  // filename.swift

@@ -42,5 +42,7 @@ The Work is provided by the Owner "as is" and "with all faults". The Owner makes
 ## 4. Amendment
 This License Agreement may be modified at any time, at the sole discretion of the Owner, and with no notice to the Licensee. The Owner shall have the right to enforce the terms of the amended License Agreement upon the day that it takes effect.
 
+Should there be any conflict between copies of the Public License Agreement on multiple branches, forks, or local copies, [the most up-to-date version on the __main__ branch of the original repository](https://github.com/qitianshi/mimosa-app/blob/main/LICENSE.md) shall take priority.
+
 ## 5. Severability
 In the event that any provision of this License Agreement is held invalid or unenforceable for any reason, all remaining provisions shall continue to be valid and enforceable. If a court finds that any provision of this License Agreement is invalid or unenforceable, but that by limiting such provision it would become valid or enforceable, then such provision shall be deemed to be written, construed, and enforced as so limited.
