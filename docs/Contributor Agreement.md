@@ -18,5 +18,7 @@ You agree that You will make every effort to honorably adhere to the [Code of Co
 ## 3. Amendment
 This Agreement may be modified at any time, at the sole discretion of the Owner, and with no notice to Contributors. The Owner shall have the right to enforce the terms of the amended Agreement upon the day that it takes effect.
 
+Should there be any conflict between copies of the Contributor Agreement on multiple branches, forks, or local copies, [the most up-to-date version on the __main__ branch of the original repository](https://github.com/qitianshi/mimosa-app/blob/main/docs/Contributor%20Agreement.md) shall take priority.
+
 ## 4. Severability
 In the event that any provision of this Agreement is held invalid or unenforceable for any reason, all remaining provisions shall continue to be valid and enforceable. If a court finds that any provision of this Agreement is invalid or unenforceable, but that by limiting such provision it would become valid or enforceable, then such provision shall be deemed to be written, construed, and enforced as so limited.
