@@ -108,7 +108,7 @@ Add a single character whitespace:
 Add a single line vertical whitespace to separate logically unrelated chunks of code.
 
 ## The Contributor Agreement
-Contributors need to agree to the [Contributor Agreement](./docs/Contributor%20Agreement.md) before contributing. It contains useful information regarding licensing and proper conduct.
+Contributors need to agree to the [Contributor Agreement](./Contributor%20Agreement.md) before contributing. It contains useful information regarding licensing and proper conduct.
 
 Here's a summary of the Agreement:
 * You'll remain the copyright holder of your own contributions, but you allow me, Qi Tianshi, and my affiliates, to use your contribution. We'll be sure to list your name in the README so you get the proper credit for your hard work.
