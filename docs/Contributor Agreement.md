@@ -1,5 +1,5 @@
 # Contributor Agreement
-Effective as of 11 January 2021
+Effective as of 18 January 2021
 
 This Contributor Agreement ("Agreement") is an agreement between Qi Tianshi, the owner of this repository ("Owner"), and You, any individual or entity who wishes to Contribute to this repository by committing code, or submitting issues or pull requests ("You", "Your", "Yourself", "Contributor"). By committing code, or submitting issues or pull requests ("Contributing", "Contribution"), You signify that You have read this Agreement, and agree to comply with its terms as a Contributor.
 
