@@ -16,13 +16,16 @@ struct LibraryTab: View {
     // Content of each list row is stored in an array so they can be generated programmatically.
     private static let listItems = [LT_ListItem(imageName: "function",
                                                 text: "Formulas",
-                                                link: AnyView(LT_Formulas())),
+                                                link: AnyView(LT_ListDetail(title: "Formulas",
+                                                                            contentType: .formula))),
                                     LT_ListItem(imageName: "book.closed",
                                                 text: "Categories",
-                                                link: AnyView(LT_Categories())),
+                                                link: AnyView(LT_ListDetail(title: "Categories",
+                                                                            contentType: .category))),
                                     LT_ListItem(imageName: "sum",
                                                 text: "Terms",
-                                                link: AnyView(LT_Terms()))]
+                                                link: AnyView(LT_ListDetail(title: "Terms",
+                                                                            contentType: .term)))]
     
     var body: some View {
         NavigationView {
@@ -36,23 +39,8 @@ struct LibraryTab: View {
                     }
                 }
                 
-                // Recently added formulas
-                VStack(alignment: .leading) {
-                    
-                    Text("Recent")
-                        .font(.title2)
-                        .fontWeight(.bold)
-                        .padding(.top)
-                    
-                    // TODO: Placeholder content
-                    LazyVStack {
-                        ForEach((0...3), id: \.self) { _ in
-                            GV_ContentPreview(heading: "Formula name", type: .formula)
-                                .frame(height: 175)
-                        }
-                    }
-                    
-                }
+                LT_Recents()
+                    .padding(.top)
                 
             }
             .navigationTitle("Library")
