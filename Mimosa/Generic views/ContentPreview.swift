@@ -104,7 +104,7 @@ struct ContentPreview: View {
         self.type = type
         
         // Closures provide the correct value for PreviewDimensions.
-        self.dimensions = Dimensions(width: { () in
+        self.dimensions = Dimensions(width: {
             switch width {
             
             case .fill:
@@ -126,7 +126,7 @@ struct ContentPreview: View {
                 return nil
                 
             }
-        }(), height: { () in
+        }(), height: {
             switch height {
             
             case .fill:

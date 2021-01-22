@@ -42,7 +42,7 @@ struct LT_ListDetail: View {
         self.title = title
         self.contentType = contentType
         
-        self.contentWidth = { () -> CGFloat in
+        self.contentWidth = {
             switch contentType {
             
             case .formula:
