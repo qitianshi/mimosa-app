@@ -113,17 +113,19 @@ struct ContentPreview: View {
             case let .value(overriddenWidth):
                 return overriddenWidth
                 
-            case .automatic where type == .formula:
-                return ContentPreview.DimensionPresets.formula.width
+            case .automatic:
+                switch type {
                 
-            case .automatic where type == .category:
-                return ContentPreview.DimensionPresets.category.width
-                
-            case .automatic where type == .term:
-                return ContentPreview.DimensionPresets.term.width
-                
-            default:
-                return nil
+                case .formula:
+                    return ContentPreview.DimensionPresets.formula.width
+                    
+                case .category:
+                    return ContentPreview.DimensionPresets.category.width
+                    
+                case .term:
+                    return ContentPreview.DimensionPresets.term.width
+                    
+                }
                 
             }
         }(), height: {
@@ -135,17 +137,19 @@ struct ContentPreview: View {
             case let .value(overriddenWidth):
                 return overriddenWidth
                 
-            case .automatic where type == .formula:
-                return ContentPreview.DimensionPresets.formula.height
+            case .automatic:
+                switch type {
                 
-            case .automatic where type == .category:
-                return ContentPreview.DimensionPresets.category.height
-                
-            case .automatic where type == .term:
-                return ContentPreview.DimensionPresets.term.height
-                
-            default:
-                return nil
+                case .formula:
+                    return ContentPreview.DimensionPresets.formula.height
+                    
+                case .category:
+                    return ContentPreview.DimensionPresets.category.height
+                    
+                case .term:
+                    return ContentPreview.DimensionPresets.term.height
+                    
+                }
                 
             }
         }())
@@ -158,8 +162,9 @@ struct ContentPreview_Previews: PreviewProvider {
     static var previews: some View {
         
         // Placeholder values for title and type.
-        ContentPreview(heading: "Placeholder name", type: .formula, width: .fill, height: .automatic)
-            .previewLayout(.fixed(width: 500, height: 500))
+        ContentPreview(heading: "Placeholder name", type: .formula, width: .automatic, height: .automatic)
+            .padding()
+            .previewLayout(.sizeThatFits)
         
     }
 }
