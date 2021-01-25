@@ -28,6 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "310B831B25BE5CB2006D85ED"
+               BuildableName = "MimosaUITests.xctest"
+               BlueprintName = "MimosaUITests"
+               ReferencedContainer = "container:Mimosa.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "310B832B25BE5D2E006D85ED"
+               BuildableName = "MimosaTests.xctest"
+               BlueprintName = "MimosaTests"
+               ReferencedContainer = "container:Mimosa.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
