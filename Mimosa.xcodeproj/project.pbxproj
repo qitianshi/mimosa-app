@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3108201425B290140049EB1F /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3108201325B290140049EB1F /* SearchBar.swift */; };
+		310B831F25BE5CB2006D85ED /* MimosaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B831E25BE5CB2006D85ED /* MimosaUITests.swift */; };
+		310B832F25BE5D2F006D85ED /* MimosaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B832E25BE5D2F006D85ED /* MimosaTests.swift */; };
 		314A71F025A7006D003C18E6 /* BT_ListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314A71EF25A7006D003C18E6 /* BT_ListRow.swift */; };
 		314C8BD6259EFFDA000BF89C /* LT_ListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314C8BD5259EFFDA000BF89C /* LT_ListRow.swift */; };
 		3177D47825A499B60029FF50 /* Ut_PlaceholderTextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3177D47725A499B60029FF50 /* Ut_PlaceholderTextStyle.swift */; };
@@ -25,12 +27,35 @@
 		31DEE00825B0539E00AC0F96 /* Ut_ConditionalModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DEE00725B0539E00AC0F96 /* Ut_ConditionalModifier.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		310B832125BE5CB2006D85ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31D05745259E02EE00257884 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31D0574C259E02EE00257884;
+			remoteInfo = Mimosa;
+		};
+		310B833125BE5D2F006D85ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31D05745259E02EE00257884 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31D0574C259E02EE00257884;
+			remoteInfo = Mimosa;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		3106FA6825AD2E0E0055D7A7 /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
 		3106FA8125AD4B110055D7A7 /* pull_request_template.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = pull_request_template.md; sourceTree = "<group>"; };
 		3106FA8C25AD6E5F0055D7A7 /* bug_report.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = bug_report.md; sourceTree = "<group>"; };
 		3106FA8D25AD6E6A0055D7A7 /* feature_request.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = feature_request.md; sourceTree = "<group>"; };
 		3108201325B290140049EB1F /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		310B831C25BE5CB2006D85ED /* MimosaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MimosaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		310B831E25BE5CB2006D85ED /* MimosaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimosaUITests.swift; sourceTree = "<group>"; };
+		310B832025BE5CB2006D85ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		310B832C25BE5D2E006D85ED /* MimosaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MimosaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		310B832E25BE5D2F006D85ED /* MimosaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimosaTests.swift; sourceTree = "<group>"; };
+		310B833025BE5D2F006D85ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		314A71EF25A7006D003C18E6 /* BT_ListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BT_ListRow.swift; sourceTree = "<group>"; };
 		314A721925A974A9003C18E6 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
 		314A721B25A975C6003C18E6 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
@@ -55,6 +80,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		310B831925BE5CB2006D85ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		310B832925BE5D2E006D85ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		31D0574A259E02EE00257884 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -81,6 +120,24 @@
 				3106FA8D25AD6E6A0055D7A7 /* feature_request.md */,
 			);
 			path = ISSUE_TEMPLATE;
+			sourceTree = "<group>";
+		};
+		310B831D25BE5CB2006D85ED /* MimosaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				310B831E25BE5CB2006D85ED /* MimosaUITests.swift */,
+				310B832025BE5CB2006D85ED /* Info.plist */,
+			);
+			path = MimosaUITests;
+			sourceTree = "<group>";
+		};
+		310B832D25BE5D2E006D85ED /* MimosaTests */ = {
+			isa = PBXGroup;
+			children = (
+				310B832E25BE5D2F006D85ED /* MimosaTests.swift */,
+				310B833025BE5D2F006D85ED /* Info.plist */,
+			);
+			path = MimosaTests;
 			sourceTree = "<group>";
 		};
 		314A71ED25A6FFFD003C18E6 /* Browse tab */ = {
@@ -135,6 +192,8 @@
 			isa = PBXGroup;
 			children = (
 				31D0574F259E02EE00257884 /* Mimosa */,
+				310B832D25BE5D2E006D85ED /* MimosaTests */,
+				310B831D25BE5CB2006D85ED /* MimosaUITests */,
 				31D05765259E03B100257884 /* README.md */,
 				314A721B25A975C6003C18E6 /* LICENSE.md */,
 				314A721C25A9B488003C18E6 /* docs */,
@@ -147,6 +206,8 @@
 			isa = PBXGroup;
 			children = (
 				31D0574D259E02EE00257884 /* Mimosa.app */,
+				310B831C25BE5CB2006D85ED /* MimosaUITests.xctest */,
+				310B832C25BE5D2E006D85ED /* MimosaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -196,6 +257,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		310B831B25BE5CB2006D85ED /* MimosaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 310B832325BE5CB2006D85ED /* Build configuration list for PBXNativeTarget "MimosaUITests" */;
+			buildPhases = (
+				310B831825BE5CB2006D85ED /* Sources */,
+				310B831925BE5CB2006D85ED /* Frameworks */,
+				310B831A25BE5CB2006D85ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				310B832225BE5CB2006D85ED /* PBXTargetDependency */,
+			);
+			name = MimosaUITests;
+			productName = MimosaUITests;
+			productReference = 310B831C25BE5CB2006D85ED /* MimosaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		310B832B25BE5D2E006D85ED /* MimosaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 310B833325BE5D2F006D85ED /* Build configuration list for PBXNativeTarget "MimosaTests" */;
+			buildPhases = (
+				310B832825BE5D2E006D85ED /* Sources */,
+				310B832925BE5D2E006D85ED /* Frameworks */,
+				310B832A25BE5D2E006D85ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				310B833225BE5D2F006D85ED /* PBXTargetDependency */,
+			);
+			name = MimosaTests;
+			productName = MimosaTests;
+			productReference = 310B832C25BE5D2E006D85ED /* MimosaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		31D0574C259E02EE00257884 /* Mimosa */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 31D0575C259E02EF00257884 /* Build configuration list for PBXNativeTarget "Mimosa" */;
@@ -222,6 +319,14 @@
 				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
+					310B831B25BE5CB2006D85ED = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 31D0574C259E02EE00257884;
+					};
+					310B832B25BE5D2E006D85ED = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 31D0574C259E02EE00257884;
+					};
 					31D0574C259E02EE00257884 = {
 						CreatedOnToolsVersion = 12.3;
 					};
@@ -241,11 +346,27 @@
 			projectRoot = "";
 			targets = (
 				31D0574C259E02EE00257884 /* Mimosa */,
+				310B831B25BE5CB2006D85ED /* MimosaUITests */,
+				310B832B25BE5D2E006D85ED /* MimosaTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		310B831A25BE5CB2006D85ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		310B832A25BE5D2E006D85ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		31D0574B259E02EE00257884 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -258,6 +379,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		310B831825BE5CB2006D85ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				310B831F25BE5CB2006D85ED /* MimosaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		310B832825BE5D2E006D85ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				310B832F25BE5D2F006D85ED /* MimosaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		31D05749259E02EE00257884 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -281,7 +418,98 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		310B832225BE5CB2006D85ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31D0574C259E02EE00257884 /* Mimosa */;
+			targetProxy = 310B832125BE5CB2006D85ED /* PBXContainerItemProxy */;
+		};
+		310B833225BE5D2F006D85ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31D0574C259E02EE00257884 /* Mimosa */;
+			targetProxy = 310B833125BE5D2F006D85ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		310B832425BE5CB2006D85ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PPPHHG5497;
+				INFOPLIST_FILE = MimosaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = qitianshi.MimosaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mimosa;
+			};
+			name = Debug;
+		};
+		310B832525BE5CB2006D85ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PPPHHG5497;
+				INFOPLIST_FILE = MimosaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = qitianshi.MimosaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mimosa;
+			};
+			name = Release;
+		};
+		310B833425BE5D2F006D85ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PPPHHG5497;
+				INFOPLIST_FILE = MimosaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = qitianshi.MimosaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mimosa.app/Mimosa";
+			};
+			name = Debug;
+		};
+		310B833525BE5D2F006D85ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PPPHHG5497;
+				INFOPLIST_FILE = MimosaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = qitianshi.MimosaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mimosa.app/Mimosa";
+			};
+			name = Release;
+		};
 		31D0575A259E02EF00257884 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -445,6 +673,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		310B832325BE5CB2006D85ED /* Build configuration list for PBXNativeTarget "MimosaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				310B832425BE5CB2006D85ED /* Debug */,
+				310B832525BE5CB2006D85ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		310B833325BE5D2F006D85ED /* Build configuration list for PBXNativeTarget "MimosaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				310B833425BE5D2F006D85ED /* Debug */,
+				310B833525BE5D2F006D85ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		31D05748259E02EE00257884 /* Build configuration list for PBXProject "Mimosa" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
